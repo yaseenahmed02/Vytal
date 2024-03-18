@@ -1,16 +1,19 @@
-<?php 
+<?php
+session_start();
 
-	session_start();
+// Unset all session variables
+$_SESSION = array();
 
-	$_SESSION = array();
+// Delete the session cookie
+if (isset($_COOKIE[session_name()])) {
+	setcookie(session_name(), '', time() - 86400, '/');
+}
 
-	if (isset($_COOKIE[session_name()])) {
-		setcookie(session_name(), '', time()-86400, '/');
-	}
+// Destroy the session
+session_destroy();
 
-	session_destroy();
+// Redirect the user to the index.html page
+header('Location: index.html');
 
-	// redirecting the user to the login page
-	header('Location: login.php?action=logout');
 
- ?>
+exit(); // Make sure to exit after redirection

@@ -114,7 +114,7 @@ if($_POST){
 
             <tr>
                 <td>
-                    <input type="reset" value="Reset" class="login-btn btn-primary-soft btn" >
+                    <input type="reset" value="Reset" class="login-btn btn-primary-soft btn style="background-color: #2e7d32;" >
                 </td>
                 <td>
                     <input type="submit" value="Next" class="login-btn btn-primary btn">
