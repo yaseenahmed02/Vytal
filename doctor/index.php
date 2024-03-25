@@ -181,7 +181,7 @@
                                 <td>
                                     <h3>Welcome!</h3>
                                     <h1><?php echo $username  ?>.</h1>
-                                    <p>Thanks for joinnig with us. We are always trying to get you a complete service<br>
+                                    <p>Thanks for joining us. We are always trying to get you a complete service<br>
                                         You can view your dailly schedule, Reach Patients Appointment at home!<br><br>
                                     </p>
                                     <a href="appointment.php" class="non-style-link"><button class="btn-primary btn" style="width:30%">View My Appointments</button></a>

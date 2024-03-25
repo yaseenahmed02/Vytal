@@ -141,6 +141,7 @@
                             $d = $row00["docname"];
                             $c = $row00["docemail"];
                             echo "<option value='$d'><br/>";
+
                             echo "<option value='$c'><br/>";
                         };
 
